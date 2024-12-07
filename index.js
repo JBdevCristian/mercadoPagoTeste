@@ -81,7 +81,7 @@ app.post('/not', (req, res) => {
     res.send('ok')
 })
 
-const PORT = 3000;
+const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
