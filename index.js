@@ -67,7 +67,6 @@ app.get('/pagar', async (req, res) => {
 
       try {
         var pagamento = await preference.create(dados);
-        console.log(pagamento)
         return res.redirect(pagamento.init_point);
       } catch (error) {
         return console.log(error)
